@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: rgb(42, 181, 241);
+  font-size: large;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color:rgb(255, 255, 255);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 0%;
+}
+
+.Btn{
+    background-color: darkcyan;
+    border-radius:20%;
+    font-size: medium;
+    font-family: Arial;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <img src="STUDIO.png" alt="Avatar woman">
+    <h2>kwitter</h2>
+    <h1>try now</h1>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <input type="text" placeholder="Enter your usernme to login kwitter">
+    <button id="login" onclick="LoginIt()" class="Btn"> login </button> 
+    <h2>Kiwtter</h2>
+    <h1>'Happening now'</h1>
+  </div>
+</div>
+     
+</body>
+</html> 
